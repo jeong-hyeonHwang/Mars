@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		3A8E651E2A6BEEF4006E1E1E /* MarsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E651D2A6BEEF4006E1E1E /* MarsApp.swift */; };
-		3A8E65202A6BEEF4006E1E1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E651F2A6BEEF4006E1E1E /* ContentView.swift */; };
+		3A8E65202A6BEEF4006E1E1E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E651F2A6BEEF4006E1E1E /* MainView.swift */; };
 		3A8E65222A6BEEF5006E1E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8E65212A6BEEF5006E1E1E /* Assets.xcassets */; };
 		3A8E65252A6BEEF5006E1E1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8E65242A6BEEF5006E1E1E /* Preview Assets.xcassets */; };
+		3A8E652D2A6BEF42006E1E1E /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 3A8E652C2A6BEF42006E1E1E /* CombineMoya */; };
+		3A8E652F2A6BEF42006E1E1E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 3A8E652E2A6BEF42006E1E1E /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A8E651A2A6BEEF4006E1E1E /* Mars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8E651D2A6BEEF4006E1E1E /* MarsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsApp.swift; sourceTree = "<group>"; };
-		3A8E651F2A6BEEF4006E1E1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3A8E651F2A6BEEF4006E1E1E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3A8E65212A6BEEF5006E1E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A8E65242A6BEEF5006E1E1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8E652F2A6BEF42006E1E1E /* Moya in Frameworks */,
+				3A8E652D2A6BEF42006E1E1E /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +55,12 @@
 		3A8E651C2A6BEEF4006E1E1E /* Mars */ = {
 			isa = PBXGroup;
 			children = (
-				3A8E651D2A6BEEF4006E1E1E /* MarsApp.swift */,
-				3A8E651F2A6BEEF4006E1E1E /* ContentView.swift */,
+				3A8E65332A6BF050006E1E1E /* Application */,
+				3A8E65302A6BEFE5006E1E1E /* Util */,
+				3A8E65312A6BEFEE006E1E1E /* Screens */,
+				3A8E65322A6BF039006E1E1E /* DesignSystem */,
+				3A8E65342A6BF05F006E1E1E /* Service */,
+				3A8E65372A6BF0EB006E1E1E /* Data */,
 				3A8E65212A6BEEF5006E1E1E /* Assets.xcassets */,
 				3A8E65232A6BEEF5006E1E1E /* Preview Content */,
 			);
@@ -65,6 +73,74 @@
 				3A8E65242A6BEEF5006E1E1E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3A8E65302A6BEFE5006E1E1E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3A8E65312A6BEFEE006E1E1E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3A8E651F2A6BEEF4006E1E1E /* MainView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3A8E65322A6BF039006E1E1E /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		3A8E65332A6BF050006E1E1E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3A8E651D2A6BEEF4006E1E1E /* MarsApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3A8E65342A6BF05F006E1E1E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3A8E65352A6BF0DC006E1E1E /* API */,
+				3A8E65362A6BF0E1006E1E1E /* Manager */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3A8E65352A6BF0DC006E1E1E /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3A8E65362A6BF0E1006E1E1E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3A8E65372A6BF0EB006E1E1E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3A8E65392A6BF10E006E1E1E /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3A8E65392A6BF10E006E1E1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +159,10 @@
 			dependencies = (
 			);
 			name = Mars;
+			packageProductDependencies = (
+				3A8E652C2A6BEF42006E1E1E /* CombineMoya */,
+				3A8E652E2A6BEF42006E1E1E /* Moya */,
+			);
 			productName = Mars;
 			productReference = 3A8E651A2A6BEEF4006E1E1E /* Mars.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +191,9 @@
 				Base,
 			);
 			mainGroup = 3A8E65112A6BEEF4006E1E1E;
+			packageReferences = (
+				3A8E652B2A6BEF42006E1E1E /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 3A8E651B2A6BEEF4006E1E1E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A8E65202A6BEEF4006E1E1E /* ContentView.swift in Sources */,
+				3A8E65202A6BEEF4006E1E1E /* MainView.swift in Sources */,
 				3A8E651E2A6BEEF4006E1E1E /* MarsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +422,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A8E652B2A6BEF42006E1E1E /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A8E652C2A6BEF42006E1E1E /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A8E652B2A6BEF42006E1E1E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		3A8E652E2A6BEF42006E1E1E /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A8E652B2A6BEF42006E1E1E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3A8E65122A6BEEF4006E1E1E /* Project object */;
 }
